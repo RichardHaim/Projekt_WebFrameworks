@@ -18,7 +18,7 @@ export class CarsSearchComponent implements OnInit {
   ngOnInit(): void {}
 
   search(): void {
-    const url = 'localhost:3000/cars';
+    const url = 'http://localhost:3000/cars';
 
     const headers = new HttpHeaders()
         .set('Accept', 'application/json');
