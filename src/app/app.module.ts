@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { CarsSearchComponent } from './cars-search/cars-search/cars-search.component';
+import { CarsSearchComponent } from './cars-search/cars-search.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
