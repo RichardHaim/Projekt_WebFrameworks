@@ -5,20 +5,21 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CarsSearchComponent } from './cars-search/cars-search/cars-search.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
-  imports: [
-    BrowserModule
-  ],
+  
   declarations: [
     AppComponent,
     SidebarComponent,
     NavbarComponent,
     CarsSearchComponent
   ],
+  imports: [
+    BrowserModule,
+    
+  ],
   providers: [],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
