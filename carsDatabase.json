@@ -1,5 +1,4 @@
-[
-    {
+    {"cars":[{
         "Marke": "Nissan",
         "Modell": "Skyline GTR R35",
         "PS": 600,
@@ -124,4 +123,4 @@
         "Beschleunigung": 9.9,
         "Gewicht": 1055,
         "Baujahr": 2020
-    }
+    }]}
