@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CarsSearchComponent } from './cars-search/cars-search/cars-search.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    CarsSearchComponent
   ],
   providers: [],
   bootstrap: [
