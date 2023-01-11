@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Cars } from 'src/app/entities/Cars';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-cars-search',
