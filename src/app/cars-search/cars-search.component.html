@@ -22,7 +22,7 @@
                  (click)="search()"
                  class="btn btn-default">
                  Search
-                 </button>
+            </button>
             </div>
         </form>
 
@@ -36,7 +36,11 @@
             <tr>
                 <th>Marke</th>
                 <th>Modell</th>
-                <th></th>
+                <th>PS</th>
+                <th>Hubraum</th>
+                <th>Beschleunigung</th>
+                <th>Gewicht</th>
+                <th>Baujahr</th>
             </tr>
         </thead>
         <tbody>
@@ -47,8 +51,12 @@
                         {{ c.Marke }}
                     </span>
                 </td>
-                <td>{{c.Marke }}</td>
                 <td>{{c.Modell }}</td>
+                <td>{{c.PS }}</td>
+                <td>{{c.Hubraum}}</td>
+                <td>{{c.Beschleunigung}}</td>
+                <td>{{c.Gewicht}}</td>
+                <td>{{c.Baujahr}}</td>
                 <td>
                     <button
                         (click)="select(c)"
