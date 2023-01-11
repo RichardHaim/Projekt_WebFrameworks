@@ -1,1 +1,30 @@
-<p>cars-search works!</p>
+<div class="card">
+
+    <div class="card-header">
+        <h2 class="card-title">Car Search</h2>
+    </div>
+
+    <div class="card-body">
+
+         <form>
+             <div class="form-group">
+                 <label>Marke:</label>
+                 <input [(ngModel)]="Marke" name="Marke" class="form-control">
+             </div>
+             <div class="form-group">
+                 <label>Modell:</label>
+                 <input [(ngModel)]="Modell" name="Modell" class="form-control">
+             </div>
+
+             <div class="form-group">
+             <button
+                 [disabled]="!Marke || !Modell"
+                 (click)="search()"
+                 class="btn btn-default">
+                 Search
+                 </button>
+            </div>
+        </form>
+
+    </div>
+</div>
