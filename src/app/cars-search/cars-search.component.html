@@ -34,6 +34,7 @@
     <table class="table table-condensed">
         <thead>
             <tr>
+                <th>id</th>
                 <th>Fahrzeug</th>
                 <th>PS</th>
                 <th>Hubraum</th>
@@ -47,9 +48,10 @@
                 [class.table-active]="c === selectedCar">
                 <td>
                     <span class="badge badge-pill badge-info">
-                        {{ c.Marke}} {{c.Modell}}
+                        {{ c.id}}
                     </span>
                 </td>
+                <td>{{ c.Marke}} {{c.Modell}}</td>
                 <td>{{c.PS }}</td>
                 <td>{{c.Hubraum}} ccm</td>
                 <td>{{c.Beschleunigung}} Sekunden</td>
