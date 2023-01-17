@@ -71,6 +71,40 @@
 
 </div>
 
+<div class="card" *ngIf="selectedCar">
+    <div class="card-header">
+      <h2 class="card-title">Car Edit</h2>
+    </div>
+    <div class="card-body">
+  
+      <div>
+          {{ message }}
+      </div>
+  
+      <form>
+          <div class="form-group">
+              <label>Id</label>
+              <input [(ngModel)]="selectedCar!.id" name="id" class="form-control">
+          </div>
+  
+          <div class="form-group">
+              <label>Marke</label>
+              <input [(ngModel)]="selectedCar!.Marke" name="Marke" class="form-control">
+          </div>
+  
+          <!-- Add the other input fields for the Flight accordingly -->
+  
+
+  
+          <div class="form-group">
+            <button (click)="save()" class="btn btn-default">Save</button>
+          </div>
+      </form>
+  
+    </div>
+  </div>
+
+
 <div class="card">
     <div class="card-body">
         <pre>{{ selectedCar | json }}</pre>

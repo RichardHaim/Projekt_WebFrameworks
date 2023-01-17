@@ -8,6 +8,8 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 })
 export class CarsSearchComponent implements OnInit {
 
+    message = '';
+
     Marke = '';
     Modell= '';
     cars: Array<Cars> = [];
@@ -42,4 +44,26 @@ export class CarsSearchComponent implements OnInit {
   select(c: Cars): void {
     this.selectedCar = c;   
     }
-  }
+
+  save(): void {
+
+    if (!this.selectedCar) return;
+
+    const url = 'http://localhost:3000/cars';
+
+    const headers = new HttpHeaders()
+        .set('Accept', 'application/json');
+
+    this.http
+        .post<Cars>(url, this.selectedCar, { headers })
+        .subscribe({
+            next: (cars) => {
+                this.selectedCar = cars;
+                this.message = 'Update successful!';
+            },
+            error: (errResponse) => {
+                this.message = 'Error on updating the Car';
+                console.error(this.message, errResponse);
+            }
+  })
+}}
