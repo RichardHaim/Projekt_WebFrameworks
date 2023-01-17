@@ -8,7 +8,8 @@
       "Hubraum": 3799,
       "Beschleunigung": 2.8,
       "Gewicht": 1778,
-      "Baujahr": 2022
+      "Baujahr": 2022,
+      "Einkaufspreis": 283948.72
     },
     {
       "id": 2,
@@ -18,7 +19,8 @@
       "Hubraum": 2997,
       "Beschleunigung": 5.1,
       "Gewicht": 1615,
-      "Baujahr": 1997
+      "Baujahr": 1997,
+      "Einkaufspreis": 337274.92
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "Hubraum": 4700,
       "Beschleunigung": 5.4,
       "Gewicht": 1262,
-      "Baujahr": 1966
+      "Baujahr": 1966,
+      "Einkaufspreis": 837482.34
     },
     {
       "id": 4,
@@ -38,7 +41,8 @@
       "Hubraum": 4971,
       "Beschleunigung": 5,
       "Gewicht": 1450,
-      "Baujahr": 1974
+      "Baujahr": 1974,
+      "Einkaufspreis": 3847273.4
     },
     {
       "id": 5,
@@ -48,7 +52,8 @@
       "Hubraum": 1998,
       "Beschleunigung": 3.8,
       "Gewicht": 1635,
-      "Baujahr": 2009
+      "Baujahr": 2009,
+      "Einkaufspreis": 183843.0
     },
     {
       "id": 6,
@@ -58,7 +63,8 @@
       "Hubraum": 3996,
       "Beschleunigung": 3.6,
       "Gewicht": 2075,
-      "Baujahr": 2019
+      "Baujahr": 2019,
+      "Einkaufspreis": 4372943.0
     },
     {
       "id": 7,
@@ -68,7 +74,8 @@
       "Hubraum": 5409,
       "Beschleunigung": 3.9,
       "Gewicht": 1581,
-      "Baujahr": 2005
+      "Baujahr": 2005,
+      "Einkaufspreis": 1749382.0
     },
     {
       "id": 8,
@@ -78,7 +85,8 @@
       "Hubraum": 3997,
       "Beschleunigung": 3.4,
       "Gewicht": 1350,
-      "Baujahr": 2003
+      "Baujahr": 2003,
+      "Einkaufspreis": 97483.4
     },
     {
       "id": 9,
@@ -88,7 +96,8 @@
       "Hubraum": 1598,
       "Beschleunigung": 7.1,
       "Gewicht": 1325,
-      "Baujahr": 2007
+      "Baujahr": 2007,
+      "Einkaufspreis": 13299.0
     },
     {
       "id": 10,
@@ -98,7 +107,8 @@
       "Hubraum": 8382,
       "Beschleunigung": 4.2,
       "Gewicht": 1521,
-      "Baujahr": 2013
+      "Baujahr": 2013,
+      "Einkaufspreis": 238194.9
     },
     {
       "id": 11,
@@ -108,7 +118,8 @@
       "Hubraum": 1591,
       "Beschleunigung": 11.1,
       "Gewicht": 1380,
-      "Baujahr": 2015
+      "Baujahr": 2015,
+      "Einkaufspreis": 9759.9
     },
     {
       "id": 12,
@@ -118,7 +129,8 @@
       "Hubraum": 5000,
       "Beschleunigung": 5.6,
       "Gewicht": 1735,
-      "Baujahr": 2022
+      "Baujahr": 2022,
+      "Einkaufspreis": 67983.9
     },
     {
       "id": 13,
@@ -128,7 +140,8 @@
       "Hubraum": 5204,
       "Beschleunigung": 2.7,
       "Gewicht": 1382,
-      "Baujahr": 2014
+      "Baujahr": 2014,
+      "Einkaufspreis": 374829.0
     },
     {
       "id": 14,
@@ -138,7 +151,8 @@
       "Hubraum": 1199,
       "Beschleunigung": 9.9,
       "Gewicht": 1055,
-      "Baujahr": 2020
+      "Baujahr": 2020,
+      "Einkaufspreis": 28394.9
     },
     {
       "id": "15",
@@ -148,7 +162,8 @@
       "Hubraum": 3996,
       "Beschleunigung": 3.6,
       "Gewicht": 2075,
-      "Baujahr": 2019
+      "Baujahr": 2019,
+      "Einkaufspreis": 384934.0
     },
     {
       "id": "16",
@@ -158,7 +173,8 @@
       "Hubraum": 3996,
       "Beschleunigung": 3.6,
       "Gewicht": 2075,
-      "Baujahr": 2019
+      "Baujahr": 2019,
+      "Einkaufspreis": 263784.9
     }
   ]
 }

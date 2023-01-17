@@ -1,0 +1,125 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "Marke": "Nissan",
+      "Modell": "Skyline GTR R35",
+      "PS": 600,
+      "Hubraum": 3799,
+      "Beschleunigung": 2.8,
+      "Gewicht": 1778,
+      "Baujahr": 2022,
+      "Einkaufspreis": 283948.72
+    },
+    {
+      "id": 2,
+      "Marke": "Toyota",
+      "Modell": "Supra MK4",
+      "PS": 321,
+      "Hubraum": 2997,
+      "Beschleunigung": 5.1,
+      "Gewicht": 1615,
+      "Baujahr": 1997,
+      "Einkaufspreis": 337274.92
+    },
+    {
+      "id": 3,
+      "Marke": "Lamborghini",
+      "Modell": "Countach LP500",
+      "PS": 446,
+      "Hubraum": 4971,
+      "Beschleunigung": 5,
+      "Gewicht": 1450,
+      "Baujahr": 1974,
+      "Einkaufspreis": 3847273.4
+    },
+    {
+      "id": 4,
+      "Marke": "Mitsubishi",
+      "Modell": "Lancer Evolution FQ-400",
+      "PS": 409,
+      "Hubraum": 1998,
+      "Beschleunigung": 3.8,
+      "Gewicht": 1635,
+      "Baujahr": 2009,
+      "Einkaufspreis": 183843.0
+    },
+    {
+      "id": 5,
+      "Marke": "Ford",
+      "Modell": "GT",
+      "PS": 542,
+      "Hubraum": 5409,
+      "Beschleunigung": 3.9,
+      "Gewicht": 1581,
+      "Baujahr": 2005,
+      "Einkaufspreis": 1749382.0
+    },
+    {
+      "id": 6,
+      "Marke": "BMW",
+      "Modell": "M3 GTR E46",
+      "PS": 350,
+      "Hubraum": 3997,
+      "Beschleunigung": 3.4,
+      "Gewicht": 1350,
+      "Baujahr": 2003,
+      "Einkaufspreis": 97483.4
+    },
+    {
+      "id": 7,
+      "Marke": "Dodge",
+      "Modell": "Viper SRT 10",
+      "PS": 648,
+      "Hubraum": 8382,
+      "Beschleunigung": 4.2,
+      "Gewicht": 1521,
+      "Baujahr": 2013,
+      "Einkaufspreis": 238194.9
+    },
+    {
+      "id": 8,
+      "Marke": "Hyundai",
+      "Modell": "ix 35",
+      "PS": 184,
+      "Hubraum": 1591,
+      "Beschleunigung": 11.1,
+      "Gewicht": 1380,
+      "Baujahr": 2015,
+      "Einkaufspreis": 9759.9
+    },
+    {
+      "id": 9,
+      "Marke": "Jaguar",
+      "Modell": "F-TYPE 75 P450 AWD Coupé",
+      "PS": 450,
+      "Hubraum": 5000,
+      "Beschleunigung": 5.6,
+      "Gewicht": 1735,
+      "Baujahr": 2022,
+      "Einkaufspreis": 67983.9
+    },
+    {
+      "id": 10,
+      "Marke": "Porsche",
+      "Modell": "Hurracan Perfomante",
+      "PS": 700,
+      "Hubraum": 5204,
+      "Beschleunigung": 2.7,
+      "Gewicht": 1382,
+      "Baujahr": 2014,
+      "Einkaufspreis": 374829.0
+    },
+    {
+      "id": 11,
+      "Marke": "Opel",
+      "Modell": "Corsa F",
+      "PS": 130,
+      "Hubraum": 1199,
+      "Beschleunigung": 9.9,
+      "Gewicht": 1055,
+      "Baujahr": 2020,
+      "Einkaufspreis": 28394.9
+    }
+  ]
+}
