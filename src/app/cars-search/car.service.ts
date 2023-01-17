@@ -12,7 +12,7 @@ export class CarService {
 
 
 find(Marke: string, Modell: string): Observable<Cars[]> {
-  const url = 'http://localhost:3000/cars_verkauf';
+  const url = 'http://localhost:3000/cars_einkauf';
 
   const headers = new HttpHeaders()
     .set('Accept', 'application/json');
@@ -25,7 +25,7 @@ find(Marke: string, Modell: string): Observable<Cars[]> {
 }
 
 save(cars: Cars): Observable<Cars> {
-  const url = 'http://localhost:3000/cars_verkauf';
+  const url = 'http://localhost:3000/cars_einkauf';
 
   const headers = new HttpHeaders()
     .set('Accept', 'application/json');
