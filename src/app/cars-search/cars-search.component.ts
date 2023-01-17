@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Cars } from 'src/app/entities/Cars';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { CarService } from './car.service';
+
 
 @Component({
   selector: 'app-cars-search',
@@ -15,31 +17,22 @@ export class CarsSearchComponent implements OnInit {
     cars: Array<Cars> = [];
     selectedCar: Cars | undefined;
 
-  constructor(private http: HttpClient) { }
-
+    constructor(private carService: CarService) { }
+  
   ngOnInit(): void {}
 
   search(): void {
-    const url = 'http://localhost:3000/cars';
-
-    const headers = new HttpHeaders()
-        .set('Accept', 'application/json');
-
-    const params = new HttpParams()
-        .set('Marke', this.Marke)
-        .set('Modell', this.Modell);
-
-    this.http
-        .get<Cars[]>(url, {headers, params})
-        .subscribe({
-            next: (cars: Cars[]) => {
-                this.cars = cars;
-            },
-            error: (errResp) => {
-                console.error('Error loading cars', errResp);
-            }
-        });
+    this.carService
+      .find(this.Marke, this.Modell)
+      .subscribe({
+        next: (cars) => {
+          this.cars = cars;
+        },
+        error: (errResp) => {
+          console.error('Error loading Cars', errResp);
       }
+    });
+  }
 
   select(c: Cars): void {
     this.selectedCar = c;   
@@ -49,13 +42,9 @@ export class CarsSearchComponent implements OnInit {
 
     if (!this.selectedCar) return;
 
-    const url = 'http://localhost:3000/cars';
 
-    const headers = new HttpHeaders()
-        .set('Accept', 'application/json');
-
-    this.http
-        .post<Cars>(url, this.selectedCar, { headers })
+    this.carService
+        .save(this.selectedCar)
         .subscribe({
             next: (cars) => {
                 this.selectedCar = cars;
@@ -65,5 +54,9 @@ export class CarsSearchComponent implements OnInit {
                 this.message = 'Error on updating the Car';
                 console.error(this.message, errResponse);
             }
-  })
+
+            
+            
+    });
 }}
+
