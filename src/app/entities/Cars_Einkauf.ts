@@ -7,4 +7,5 @@ export interface Cars {
     Beschleunigung:number;
     Gewicht:number;
     Baujahr:number;
+    Einkaufspreis:number;
 }

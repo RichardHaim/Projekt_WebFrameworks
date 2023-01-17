@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Cars } from '../entities/Cars';
+import { Cars } from '../entities/Cars_Einkauf';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 

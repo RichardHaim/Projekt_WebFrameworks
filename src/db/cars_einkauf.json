@@ -53,7 +53,7 @@
       "Beschleunigung": 3.8,
       "Gewicht": 1635,
       "Baujahr": 2009,
-      "Einkaufspreis": 183843.0
+      "Einkaufspreis": 183843
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
       "Beschleunigung": 3.6,
       "Gewicht": 2075,
       "Baujahr": 2019,
-      "Einkaufspreis": 4372943.0
+      "Einkaufspreis": 4372943
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
       "Beschleunigung": 3.9,
       "Gewicht": 1581,
       "Baujahr": 2005,
-      "Einkaufspreis": 1749382.0
+      "Einkaufspreis": 1749382
     },
     {
       "id": 8,
@@ -97,7 +97,7 @@
       "Beschleunigung": 7.1,
       "Gewicht": 1325,
       "Baujahr": 2007,
-      "Einkaufspreis": 13299.0
+      "Einkaufspreis": 13299
     },
     {
       "id": 10,
@@ -141,7 +141,7 @@
       "Beschleunigung": 2.7,
       "Gewicht": 1382,
       "Baujahr": 2014,
-      "Einkaufspreis": 374829.0
+      "Einkaufspreis": 374829
     },
     {
       "id": 14,
@@ -163,7 +163,7 @@
       "Beschleunigung": 3.6,
       "Gewicht": 2075,
       "Baujahr": 2019,
-      "Einkaufspreis": 384934.0
+      "Einkaufspreis": 384934
     },
     {
       "id": "16",
@@ -175,6 +175,17 @@
       "Gewicht": 2075,
       "Baujahr": 2019,
       "Einkaufspreis": 263784.9
+    },
+    {
+      "id": "22",
+      "Marke": "Audis",
+      "Modell": "RS6 C8",
+      "PS": 600,
+      "Hubraum": 3996,
+      "Beschleunigung": 3.6,
+      "Gewicht": 2075,
+      "Baujahr": 2019,
+      "Einkaufspreis": 4372943
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Cars } from 'src/app/entities/Cars';
+import { Cars } from 'src/app/entities/Cars_Einkauf';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { CarService } from './car.service';
 
