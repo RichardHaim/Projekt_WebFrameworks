@@ -1,5 +1,5 @@
 {
-  "cars": [
+  "cars_einkauf": [
     {
       "id": 1,
       "Marke": "Nissan",
@@ -186,6 +186,91 @@
       "Gewicht": 2075,
       "Baujahr": 2019,
       "Einkaufspreis": 4372943
+    }
+  ],
+  "Buchhaltung": [
+    {
+      "id": 1,
+      "date": "01.01.2020",
+      "Bilanzjahr": 2019,
+      "numberCarsSold": 67,
+      "numberCarsBought": 78,
+      "EURin": 3829384.0,
+      "EURout": 323748.9
+    },
+    {
+      "id": 2,
+      "date": "01.01.2021",
+      "Bilanzjahr": 2020,
+      "numberCarsSold": 67,
+      "numberCarsBought": 78,
+      "EURin": 3829384.0,
+      "EURout": 323748.9
+    },
+    {
+      "id": 3,
+      "Bilanzjahr": 2021,
+      "date": "01.01.2022",
+      "numberCarsSold": 67,
+      "numberCarsBought": 78,
+      "EURin": 3829384.0,
+      "EURout": 323748.9
+    },
+    {
+      "id": 4,
+      "Bilanzjahr": 2022,
+      "date": "01.01.2023",
+      "numberCarsSold": 67,
+      "numberCarsBought": 78,
+      "EURin": 3829384.0,
+      "EURout": 323748.9
+    }
+  ],
+  "cars_verkauf": [
+    {
+      "id": 1,
+      "idCar": 1,
+      "Marke": "Nissan",
+      "Modell": "Skyline GTR R35",
+      "PS": 600,
+      "Hubraum": 3799,
+      "Beschleunigung": 2.8,
+      "Gewicht": 1778,
+      "Baujahr": 2022,
+      "Einkaufspreis": 283948.72,
+      "Verkaufspreis": 238499.93,
+      "KundeVorname": "Hans",
+      "KundeNachname": "Wurst"
+    },
+    {
+      "id": 2,
+      "idCar": 2,
+      "Marke": "Toyota",
+      "Modell": "Supra MK4",
+      "PS": 321,
+      "Hubraum": 2997,
+      "Beschleunigung": 5.1,
+      "Gewicht": 1615,
+      "Baujahr": 1997,
+      "Einkaufspreis": 337274.92,
+      "Verkaufspreis": 318283.93,
+      "KundeVorname": "Sepp",
+      "KundeNachname": "Dong"
+    },
+    {
+      "id": 3,
+      "idCar": 5,
+      "Marke": "Mitsubishi",
+      "Modell": "Lancer Evolution FQ-400",
+      "PS": 409,
+      "Hubraum": 1998,
+      "Beschleunigung": 3.8,
+      "Gewicht": 1635,
+      "Baujahr": 2009,
+      "Einkaufspreis": 183843.0,
+      "Verkaufspreis": 128384.93,
+      "KundeVorname": "Peter",
+      "KundeNachname": "Kleber"
     }
   ]
 }
