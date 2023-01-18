@@ -1,32 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { Cars } from 'src/app/entities/Cars_Einkauf';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { CarService } from './car.service';
+import { EinkaufService } from './Einkauf.service';
 
 
 @Component({
-  selector: 'app-cars-search',
-  templateUrl: './cars-search.component.html',
+  selector: 'app-Einkauf',
+  templateUrl: './Einkauf.component.html',
 })
-export class CarsSearchComponent implements OnInit {
+export class EinkaufComponent implements OnInit {
 
     message = '';
 
     Marke = '';
     Modell= '';
-    cars: Array<Cars> = [];
-    selectedCar: Cars | undefined;
+    Cars: Array<Cars> = [];
+    selectedCars: Cars | undefined;
 
-    constructor(private carService: CarService) { }
+    constructor(private EinkaufService: EinkaufService) { }
   
   ngOnInit(): void {}
 
   search(): void {
-    this.carService
+    this.EinkaufService
       .find(this.Marke, this.Modell)
       .subscribe({
-        next: (cars) => {
-          this.cars = cars;
+        next: (Cars) => {
+          this.Cars = Cars;
         },
         error: (errResp) => {
           console.error('Error loading Cars', errResp);
@@ -35,19 +35,19 @@ export class CarsSearchComponent implements OnInit {
   }
 
   select(c: Cars): void {
-    this.selectedCar = c;   
+    this.selectedCars = c;   
     }
 
   save(): void {
 
-    if (!this.selectedCar) return;
+    if (!this.selectedCars) return;
 
 
-    this.carService
-        .save(this.selectedCar)
+    this.EinkaufService
+        .save(this.selectedCars)
         .subscribe({
-            next: (cars) => {
-                this.selectedCar = cars;
+            next: (Cars) => {
+                this.selectedCars = Cars;
                 this.message = 'Update successful!';
             },
             error: (errResponse) => {

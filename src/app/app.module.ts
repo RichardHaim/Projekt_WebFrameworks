@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { CarsSearchComponent } from './cars-search/cars-search.component';
+import { EinkaufComponent } from './Einkauf/Einkauf.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { VerkaufComponent } from './verkauf/verkauf.component';
@@ -16,10 +16,10 @@ import { BuchhaltungComponent } from './buchhaltung/buchhaltung.component';
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    CarsSearchComponent,
     HomeComponent,
     VerkaufComponent,
-    BuchhaltungComponent
+    BuchhaltungComponent,
+    EinkaufComponent
   ],
   imports: [
     BrowserModule,
