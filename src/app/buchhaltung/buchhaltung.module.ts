@@ -5,6 +5,7 @@ import { BuchhaltungComponent } from './buchhaltungsmanagement/buchhaltung.compo
 import { BuchhaltungCardComponent } from './buchhaltung-card/buchhaltung-card.component';
 import { RouterModule } from '@angular/router';
 import { BUCHHALTUNG_ROUTES } from './buchhaltung.routes';
+import { BuchhaltungService } from './buchhaltung.service';
 
 @NgModule({
     imports:[
@@ -15,7 +16,7 @@ import { BUCHHALTUNG_ROUTES } from './buchhaltung.routes';
 
     declarations: [
       BuchhaltungComponent,
-      BuchhaltungCardComponent
+      BuchhaltungCardComponent,
     ],
 
     providers: [],
