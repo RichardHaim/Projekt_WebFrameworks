@@ -6,6 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { EinkaufComponent } from './Einkauf/Einkauf.component';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component';
+import { VerkaufComponent } from './verkauf/verkauf.component';
+import { BuchhaltungComponent } from './buchhaltung/buchhaltung.component';
 
 @NgModule({
   
@@ -13,7 +16,10 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    EinkaufComponent
+    CarsSearchComponent,
+    HomeComponent,
+    VerkaufComponent,
+    BuchhaltungComponent
   ],
   imports: [
     BrowserModule,
