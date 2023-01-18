@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { CarsSearchComponent } from './cars-search/cars-search.component';
+import { EinkaufComponent } from './Einkauf/Einkauf.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    CarsSearchComponent
+    EinkaufComponent
   ],
   imports: [
     BrowserModule,
