@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { EinkaufComponent } from './Einkauf/einkaufsmanagement/Einkauf.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { VerkaufComponent } from './verkauf/verkauf.component';
 import { EinkaufCardComponent } from './Einkauf/einkauf-card/einkauf-card.component';
-import { BuchhaltungCardComponent } from './buchhaltung/buchhaltung-card/buchhaltung-card.component';
-import { BuchhaltungComponent } from './buchhaltung/buchhaltungsmanagement/buchhaltung.component';
+import { APP_ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
+import { BuchhaltungModule } from './buchhaltung/buchhaltung.module';
+import { VerkaufsmanagementComponent } from './verkauf/verkaufsmanagement/verkaufsmanagement.component';
+import { VerkaufCardComponent } from './verkauf/verkauf-card/verkauf-card.component';
 
 @NgModule({
   
@@ -19,16 +21,17 @@ import { BuchhaltungComponent } from './buchhaltung/buchhaltungsmanagement/buchh
     SidebarComponent,
     NavbarComponent,
     HomeComponent,
-    VerkaufComponent,
-    BuchhaltungComponent,
     EinkaufComponent,
     EinkaufCardComponent,
-    BuchhaltungCardComponent
+    VerkaufsmanagementComponent,
+    VerkaufCardComponent
   ],
   imports: [
+    BuchhaltungModule,
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(APP_ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
