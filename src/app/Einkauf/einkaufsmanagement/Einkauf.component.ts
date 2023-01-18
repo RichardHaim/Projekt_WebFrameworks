@@ -17,6 +17,9 @@ export class EinkaufComponent implements OnInit {
     Cars: Array<Cars> = [];
     selectedCars: Cars | undefined;
 
+    basket: Record<number, boolean> = {
+    };
+
     constructor(private EinkaufService: EinkaufService) { }
   
   ngOnInit(): void {}

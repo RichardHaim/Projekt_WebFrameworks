@@ -104,10 +104,16 @@
     </div>
   </div>
 
-
-<div class="card">
-    <div class="card-body">
-        <pre>{{ selectedCars | json }}</pre>
+<div class="row">
+    <div
+      *ngFor="let Cars of Cars"
+      class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <app-einkauf-card [item]="Cars" [(selected)]="basket[Cars.id]"></app-einkauf-card>
     </div>
-</div>
+  </div>
 
+  <div class="card">
+    <div class="card-body">
+      <pre>{{ basket | json }}</pre>
+    </div>
+  </div>

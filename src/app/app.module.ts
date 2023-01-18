@@ -22,6 +22,7 @@ import { EinkaufCardComponent } from './Einkauf/einkauf-card/einkauf-card.compon
     BuchhaltungComponent,
     EinkaufComponent,
     EinkaufCardComponent
+  
   ],
   imports: [
     BrowserModule,
