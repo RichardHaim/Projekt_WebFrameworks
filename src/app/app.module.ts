@@ -11,8 +11,8 @@ import { EinkaufCardComponent } from './Einkauf/einkauf-card/einkauf-card.compon
 import { APP_ROUTES } from './app.routes';
 import { RouterModule } from '@angular/router';
 import { BuchhaltungModule } from './buchhaltung/buchhaltung.module';
-import { VerkaufsmanagementComponent } from './verkauf/verkaufsmanagement/verkaufsmanagement.component';
-import { VerkaufCardComponent } from './verkauf/verkauf-card/verkauf-card.component';
+import { VerkaufsmanagementComponent } from './verkauf/verkaufsmanagement/verkaufsmanagement/verkaufsmanagement.component';
+import { VerkaufCardComponent } from './verkauf/verkaufsmanagement/verkauf-card/verkauf-card.component';
 
 @NgModule({
   
