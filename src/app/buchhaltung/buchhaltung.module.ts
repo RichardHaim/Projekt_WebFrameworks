@@ -6,20 +6,23 @@ import { BuchhaltungCardComponent } from './buchhaltung-card/buchhaltung-card.co
 import { RouterModule } from '@angular/router';
 import { BUCHHALTUNG_ROUTES } from './buchhaltung.routes';
 
-
-
 @NgModule({
-  declarations: [
-    BuchhaltungComponent,
-    BuchhaltungCardComponent
-  ],
-  imports: [
-    CommonModule,
-    SharedModule,
-    RouterModule.forChild(BUCHHALTUNG_ROUTES)
-  ],
-  exports: [
-    BuchhaltungComponent
-  ]
-})
+    imports:[
+        CommonModule,
+        SharedModule,
+        RouterModule.forChild(BUCHHALTUNG_ROUTES)
+    ],
+
+    declarations: [
+      BuchhaltungComponent,
+      BuchhaltungCardComponent
+    ],
+
+    providers: [],
+    
+    exports: [
+      BuchhaltungComponent
+    ]
+
+  })
 export class BuchhaltungModule { }
