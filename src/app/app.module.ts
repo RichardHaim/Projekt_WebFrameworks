@@ -16,10 +16,10 @@ import { BuchhaltungComponent } from './buchhaltung/buchhaltung.component';
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    CarsSearchComponent,
     HomeComponent,
     VerkaufComponent,
-    BuchhaltungComponent
+    BuchhaltungComponent,
+    EinkaufComponent
   ],
   imports: [
     BrowserModule,
