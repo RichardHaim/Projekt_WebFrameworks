@@ -1,1 +1,21 @@
 <p>einkauf-card works!</p>
+<div
+    class="card"
+    [ngStyle]="{'background-color': (selected) ? 'rgb(204, 197, 185)' : 'white' }">
+
+    <div class="card-header">
+        <h2 class="card-title">{{ item?.Marke }} - {{ item?.Modell }}</h2>
+    </div>
+
+    <div class="card-body">
+        <p>Car-Id.: #{{ item?.id }}</p>
+        <p>Date: {{ item?<div class="date"></div> | date:'dd.MM.yyyy HH:mm' }}
+        <p>
+            <button
+                class="btn btn-default"
+                (click)="toggleSelection()">
+                {{ selected ? 'Remove' : 'Select' }}
+            </button>
+        </p>
+  </div>
+</div>

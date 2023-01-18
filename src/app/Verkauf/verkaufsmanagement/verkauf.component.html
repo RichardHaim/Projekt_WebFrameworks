@@ -1,7 +1,9 @@
+<p>Verkauf works!</p>
+
 <div class="card">
 
     <div class="card-header">
-        <h2 class="card-title">Einkauf</h2>
+        <h2 class="card-title">Verkauf</h2>
     </div>
 
     <div class="card-body">
@@ -41,6 +43,9 @@
                 <th>0 auf 100</th>
                 <th>Gewicht</th>
                 <th>Baujahr</th>
+                <th>Verkaufspreis</th>
+                <th>Vorname</th>
+                <th>Nachname</th>
             </tr>
         </thead>
         <tbody>
@@ -57,6 +62,9 @@
                 <td>{{c.Beschleunigung}} Sekunden</td>
                 <td>{{c.Gewicht}} kg</td>
                 <td>{{c.Baujahr}}</td>
+                <td>{{c.Verkaufspreis}}</td>
+                <td>{{c.KundeVorname}}</td>
+                <td>{{c.KundeNachname}}</td>
                 <td>
                     <button
                         (click)="select(c)"
@@ -104,16 +112,10 @@
     </div>
   </div>
 
-<div class="row">
-    <div
-      *ngFor="let Cars of Cars"
-      class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <app-einkauf-card [item]="Cars" [(selected)]="basket[Cars.id]"></app-einkauf-card>
-    </div>
-  </div>
 
-  <div class="card">
+<div class="card">
     <div class="card-body">
-      <pre>{{ basket | json }}</pre>
+        <pre>{{ selectedCars | json }}</pre>
     </div>
-  </div>
+</div>
+
