@@ -195,7 +195,8 @@
       "numberCarsSold": 12,
       "numberCarsBought": 10,
       "EURin": 500,
-      "EURout": 100
+      "EURout": 100,
+      "Bilanz": 400
     },
     {
       "id": 2,
@@ -203,7 +204,8 @@
       "numberCarsSold": 29,
       "numberCarsBought": 22,
       "EURin": 300,
-      "EURout": 122
+      "EURout": 122,
+      "Bilanz": 178
     },
     {
       "id": 3,
@@ -211,7 +213,8 @@
       "numberCarsSold": 13,
       "numberCarsBought": 17,
       "EURin": 3000,
-      "EURout": 1500.9
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     },
     {
       "id": 4,
@@ -219,7 +222,8 @@
       "numberCarsSold": 1,
       "numberCarsBought": 37,
       "EURin": 22222,
-      "EURout": 11111
+      "EURout": 11111,
+      "Bilanz": 11111
     }
   ],
   "cars_verkauf": [

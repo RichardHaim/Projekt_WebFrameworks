@@ -68,4 +68,18 @@
     </table>
 </div>
 
+
+<div class="row">
+    <div
+      *ngFor="let b of Buchhaltung_Suche"
+      class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <app-buchhaltung-card [item]="b" [(selected)]="basket[b.id]"></app-buchhaltung-card>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <pre>{{ basket | json }}</pre>
+    </div>
+  </div>
 <!-- DEN PART MIT DER ANZEIGE DER ZULETZT EINGEGEBENEN BILANZ WOLLEN WIR ALS TD -->

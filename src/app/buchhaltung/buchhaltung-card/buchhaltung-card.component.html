@@ -1,1 +1,22 @@
-<p>buchhaltung-card works!</p>
+<div
+    class="card"
+    [ngStyle]="{'background-color': (selected) ? 'rgb(204, 197, 185)' : 'white' }">
+
+<!-- wir wollen hier die Bilanz selbst darstellen.-->
+
+    <div class="card-header">
+        <h2 class="card-title"> Bilanz per {{item?.date}}:<br><span class = "badge badge-pill badge-info">EUR {{item?.Bilanz | number}}</span></h2>
+    </div>
+    <div class="card-body">
+        <p>Buchhaltungs-Id.: {{ item?.id }}</p>
+        <p>Verkaufssumme (EUR): {{item?.EURin | number }}</p>
+        <p>Einkaufssumme (EUR): {{item?.EURout | number }}</p>
+        <p>
+            <button
+                class="btn btn-default"
+                (click)="toggleSelection()">
+                {{ selected ? 'Remove' : 'Select' }}
+            </button>
+        </p>
+  </div>
+</div>

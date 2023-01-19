@@ -5,4 +5,5 @@ export interface Buchhaltung {
     numberCarsBought: number;
     EURin: number;
     EURout: number;
+    Bilanz: number;
 }

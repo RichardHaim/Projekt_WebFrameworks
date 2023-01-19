@@ -10,8 +10,9 @@ import { BuchhaltungService } from '../buchhaltung.service';
 export class BuchhaltungComponent implements OnInit {
 
     Buchhaltung_Suche: Array<Buchhaltung> = [];
-    selectedEntry: Buchhaltung | undefined;
+    selectedEntry: Buchhaltung | undefined ;
     basket: Record<number, boolean> = { }
+
 
     constructor(private BuchhaltungService: BuchhaltungService) { }
 
@@ -33,6 +34,10 @@ export class BuchhaltungComponent implements OnInit {
           console.error("Error loading the dataset", errResp);
         }
       })
+    }
+
+    select(b:Buchhaltung): void {
+      this.selectedEntry = b;
     }
 
 }
