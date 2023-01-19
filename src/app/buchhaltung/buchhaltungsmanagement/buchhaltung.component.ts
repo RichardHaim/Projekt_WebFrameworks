@@ -10,6 +10,7 @@ import { BuchhaltungService } from '../buchhaltung.service';
 export class BuchhaltungComponent implements OnInit {
 
     Buchhaltung_Suche: Array<Buchhaltung> = [];
+    Buchhaltung_add: Array<Buchhaltung> = [];
     selectedEntry: Buchhaltung | undefined ;
     basket: Record<number, boolean> = { }
 
@@ -36,7 +37,12 @@ export class BuchhaltungComponent implements OnInit {
     }
 
     create(): void {
+      // holt sich via get_einkaufsdaten() die Summe der Einkaufspreise & Anzahl der Einträge
+      // holt sich via get_verkaufsdaten() die Summe der Verkaufspreise & Anzahl der Einträge
+      this.Buchhaltung_add
+
       // Greift auf Service-Funktion post_Bilanz zu
+      // Soll die Daten in den array "Buchhaltung_add" speichern, welcher dann für 
     }
 
     select(b:Buchhaltung): void {
