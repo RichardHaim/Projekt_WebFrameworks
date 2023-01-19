@@ -191,21 +191,21 @@
   "Buchhaltung": [
     {
       "id": 1,
-      "date": "01.01.2020",
-      "numberCarsSold": 12,
-      "numberCarsBought": 10,
-      "EURin": 500,
-      "EURout": 100,
-      "Bilanz": 400
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     },
     {
       "id": 2,
-      "date": "01.01.2021",
-      "numberCarsSold": 29,
-      "numberCarsBought": 22,
-      "EURin": 300,
-      "EURout": 122,
-      "Bilanz": 178
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     },
     {
       "id": 3,
@@ -218,12 +218,30 @@
     },
     {
       "id": 4,
-      "date": "01.01.2023",
-      "numberCarsSold": 1,
-      "numberCarsBought": 37,
-      "EURin": 22222,
-      "EURout": 11111,
-      "Bilanz": 11111
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
+    },
+    {
+      "id": 5,
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
+    },
+    {
+      "id": 6,
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     }
   ],
   "cars_verkauf": [
@@ -267,7 +285,7 @@
       "Beschleunigung": 3.8,
       "Gewicht": 1635,
       "Baujahr": 2009,
-      "Einkaufspreis": 183843.0,
+      "Einkaufspreis": 183843,
       "Verkaufspreis": 128384.93,
       "KundeVorname": "Peter",
       "KundeNachname": "Kleber"

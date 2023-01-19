@@ -33,6 +33,7 @@
 
 <!-- DIESEN PART WOLLEN WIR IN CARDS -->
 <div class="card" *ngIf="Buchhaltung_Suche.length">
+    <div class="card-body"><h3>Ergebnis der berechneten Bilanz</h3></div>
     <table class="table table-condensed">
         <thead>
             <tr>
@@ -68,12 +69,18 @@
     </table>
 </div>
 
+<div class="card" *ngIf="Buchhaltung_Suche.length">
+    <div class="card-header">
+        <h3 class="card-title">Gespeicherte Bilanzeinträge</h3>
+    </div>
+</div>
+
 
 <div class="row">
     <div
       *ngFor="let b of Buchhaltung_Suche"
       class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <app-buchhaltung-card [item]="b" [(selected)]="basket[b.id]"></app-buchhaltung-card>
+      <app-buchhaltung-card [item]="b"></app-buchhaltung-card>
     </div>
   </div>
 

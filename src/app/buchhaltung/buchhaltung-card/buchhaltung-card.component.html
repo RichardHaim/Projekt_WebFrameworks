@@ -1,22 +1,33 @@
 <div
-    class="card"
-    [ngStyle]="{'background-color': (selected) ? 'rgb(204, 197, 185)' : 'white' }">
+    class="card">
 
 <!-- wir wollen hier die Bilanz selbst darstellen.-->
 
     <div class="card-header">
-        <h2 class="card-title"> Bilanz per {{item?.date}}:<br><span class = "badge badge-pill badge-info">EUR {{item?.Bilanz | number}}</span></h2>
+        <h4 class="card-title"> Bilanz per {{item?.date}}<br><span class = "badge badge-pill badge-info">EUR {{item?.Bilanz | number}}</span></h4>
     </div>
     <div class="card-body">
-        <p>Buchhaltungs-Id.: {{ item?.id }}</p>
-        <p>Verkaufssumme (EUR): {{item?.EURin | number }}</p>
-        <p>Einkaufssumme (EUR): {{item?.EURout | number }}</p>
+        <table>
+            <tr>
+                <td>Datensatz-ID:</td>
+                <td align="right">{{ item?.id }}</td>
+            </tr>
+            <tr>
+                <td>Verkauf:</td>
+                <td align="right">&euro; {{item?.EURin | number }}</td>
+            </tr>
+            <tr>
+                <td>Einkauf:</td>
+                <td>&euro; {{item?.EURout | number }}</td>
+            </tr>
+        </table>
         <p>
             <button
                 class="btn btn-default"
-                (click)="toggleSelection()">
-                {{ selected ? 'Remove' : 'Select' }}
+                (click)=delete()>
+                Löschen
             </button>
+            <em style="color:green">{{message}}</em>
         </p>
   </div>
 </div>

@@ -13,7 +13,6 @@ export class BuchhaltungComponent implements OnInit {
     selectedEntry: Buchhaltung | undefined ;
     basket: Record<number, boolean> = { }
 
-
     constructor(private BuchhaltungService: BuchhaltungService) { }
 
     ngOnInit(): void { }
@@ -35,6 +34,9 @@ export class BuchhaltungComponent implements OnInit {
         }
       })
     }
+
+    change(): void {}
+    delete(): void {}
 
     select(b:Buchhaltung): void {
       this.selectedEntry = b;
