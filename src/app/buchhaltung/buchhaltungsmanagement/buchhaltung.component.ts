@@ -35,8 +35,9 @@ export class BuchhaltungComponent implements OnInit {
       })
     }
 
-    change(): void {}
-    delete(): void {}
+    create(): void {
+      // Greift auf Service-Funktion post_Bilanz zu
+    }
 
     select(b:Buchhaltung): void {
       this.selectedEntry = b;

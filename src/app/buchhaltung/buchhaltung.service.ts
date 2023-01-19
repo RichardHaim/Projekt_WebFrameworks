@@ -25,7 +25,23 @@ export class BuchhaltungService {
         return this.http.delete<Buchhaltung>(url, {headers});
     }
 
-    add():Observable<Buchhaltung[]>{
+    get_einkaufsdaten(): void {
+        // Über Verkaufsservice --> Funktion find_all()
+        // Ist noch nicht implementiert.
+    }
+
+    get_verkaufsdaten():void {
+        // Über Einkaufsservice -> Funktion find_all()
+    }
+    
+    post_bilanz():Observable<Buchhaltung[]>{
+        // from get_einkauf receive
+        //      count of entries
+        //      Einkaufspreis
+        // from get_verkauf receive
+        //      count of entries
+        //      Verkaufspreis
+
         const url = 'http://localhost:3000/Buchhaltung';
         const headers = new HttpHeaders()
             .set("Accept", "application/json");
