@@ -6,12 +6,14 @@ import { BuchhaltungCardComponent } from './buchhaltung-card/buchhaltung-card.co
 import { RouterModule } from '@angular/router';
 import { BUCHHALTUNG_ROUTES } from './buchhaltung.routes';
 import { BuchhaltungService } from './buchhaltung.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     imports:[
         CommonModule,
         SharedModule,
-        RouterModule.forChild(BUCHHALTUNG_ROUTES)
+        RouterModule.forChild(BUCHHALTUNG_ROUTES),
+        ReactiveFormsModule
     ],
 
     declarations: [
