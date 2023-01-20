@@ -4,31 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { EinkaufComponent } from './Einkauf/einkaufsmanagement/Einkauf.component';
-import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { VerkaufComponent } from './verkauf/verkaufsmanagement/verkauf.component';
-import { EinkaufCardComponent } from './Einkauf/einkauf-card/einkauf-card.component';
-import { BuchhaltungCardComponent } from './buchhaltung/buchhaltung-card/buchhaltung-card.component';
-import { BuchhaltungComponent } from './buchhaltung/buchhaltungsmanagement/buchhaltung.component';
+import { APP_ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
+import { BuchhaltungModule } from './buchhaltung/buchhaltung.module';
+import { SharedModule } from './shared/shared.module';
+import { EinkaufModule } from './Einkauf/einkauf.module';
+import { VerkaufModule } from './verkauf/verkauf.module';
 
 @NgModule({
-  
+  imports: [
+    BuchhaltungModule,
+    EinkaufModule,
+    VerkaufModule,
+    BrowserModule,
+    SharedModule,
+    HttpClientModule,
+    RouterModule.forRoot(APP_ROUTES)
+  ],
   declarations: [
     AppComponent,
     SidebarComponent,
     NavbarComponent,
     HomeComponent,
-    VerkaufComponent,
-    BuchhaltungComponent,
-    EinkaufComponent,
-    EinkaufCardComponent,
-    BuchhaltungCardComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

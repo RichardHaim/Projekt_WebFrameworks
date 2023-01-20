@@ -1,1 +1,93 @@
-<p>buchhaltung works!</p>
+<!--
+    Layout:
+    Button für neue Bilanzberechnung
+        Ergebnis: Anzeige der Informationen in div-cards (wie beim Flugservice am Anfang)
+        mit Button zur Möglichkeit der Änderung
+        mit Button zur Möglichkeit der Löschung
+    Button für das Auslesen der vorhandenen Bilanzdaten
+        Ergebnis: cards mit allen Informationen + Berechnung der Bilanz
+        mit Button zur Möglichkeit der Änderung
+        mit Button zur Möglichkeit der Löschung
+    -->
+
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">Buchhaltung</h2>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div>
+            <button class="btn btn-info col-3 mx-auto" (click)="create()">
+            Berechnung der aktuellen Bilanzdaten
+            </button>
+        </div>
+        <div>
+            <button class="btn btn-info col-3 mx-auto" (click)="search()">
+                Anzeige aller gespeicherten Bilanzdaten
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- TODO: diesen part in Cards für die Erstellung neuer Einträge verschieben -->
+<div class="card" *ngIf="Buchhaltung_add.length">
+    <div class="card-body"><h3>Ergebnis der berechneten Bilanz</h3></div>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Datum</th>
+                <th>Autos verkauft</th>
+                <th>Autos gekauft</th>
+                <th>Einnahmen (EUR)</th>
+                <th>Ausgaben (EUR)</th>
+                <th>Bilanz (EUR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let b of Buchhaltung_Suche"
+                [class.table-active]="b == selectedEntry">
+                <td>
+                    <span class="badge badge-pill badge-info">
+                        {{b.id}}
+                    </span>
+                </td>
+                <td>{{b.date}}</td>
+                <td>{{b.numberCarsSold}}</td>
+                <td>{{b.numberCarsBought}}</td>
+                <td>{{b.EURin}}</td>
+                <td>{{b.EURout}}</td>
+                <td>
+                    <span class="badge badge-pill badge-info">
+                        {{ bilanz(b.EURin, b.EURout)}}
+                    </span>
+                </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="card" *ngIf="Buchhaltung_Suche.length">
+    <div class="card-header">
+        <h3 class="card-title">Gespeicherte Bilanzeinträge</h3>
+    </div>
+</div>
+
+
+<div class="row">
+    <div
+      *ngFor="let b of Buchhaltung_Suche"
+      class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+      <app-buchhaltung-card [item]="b"></app-buchhaltung-card>
+    </div>
+  </div>
+
+  <!--
+  <div class="card">
+    <div class="card-body">
+      <pre>{{ basket | json }}</pre>
+    </div>
+  </div>
+  -->

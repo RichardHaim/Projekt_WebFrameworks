@@ -62,9 +62,6 @@ export class EinkaufComponent implements OnInit {
             
     });
 
-  update(): void {
-
-    
-  }
+  
 }}
 

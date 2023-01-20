@@ -191,39 +191,57 @@
   "Buchhaltung": [
     {
       "id": 1,
-      "date": "01.01.2020",
-      "Bilanzjahr": 2019,
-      "numberCarsSold": 67,
-      "numberCarsBought": 78,
-      "EURin": 3829384.0,
-      "EURout": 323748.9
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     },
     {
       "id": 2,
-      "date": "01.01.2021",
-      "Bilanzjahr": 2020,
-      "numberCarsSold": 67,
-      "numberCarsBought": 78,
-      "EURin": 3829384.0,
-      "EURout": 323748.9
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     },
     {
       "id": 3,
-      "Bilanzjahr": 2021,
       "date": "01.01.2022",
-      "numberCarsSold": 67,
-      "numberCarsBought": 78,
-      "EURin": 3829384.0,
-      "EURout": 323748.9
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     },
     {
       "id": 4,
-      "Bilanzjahr": 2022,
-      "date": "01.01.2023",
-      "numberCarsSold": 67,
-      "numberCarsBought": 78,
-      "EURin": 3829384.0,
-      "EURout": 323748.9
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
+    },
+    {
+      "id": 5,
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
+    },
+    {
+      "id": 6,
+      "date": "01.01.2022",
+      "numberCarsSold": 13,
+      "numberCarsBought": 17,
+      "EURin": 3000,
+      "EURout": 1500.9,
+      "Bilanz": 1499.1
     }
   ],
   "cars_verkauf": [
@@ -267,7 +285,7 @@
       "Beschleunigung": 3.8,
       "Gewicht": 1635,
       "Baujahr": 2009,
-      "Einkaufspreis": 183843.0,
+      "Einkaufspreis": 183843,
       "Verkaufspreis": 128384.93,
       "KundeVorname": "Peter",
       "KundeNachname": "Kleber"
