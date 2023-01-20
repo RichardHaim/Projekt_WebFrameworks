@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { EinkaufComponent } from './Einkauf/einkaufsmanagement/Einkauf.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
-import { VerkaufComponent } from './verkauf/verkauf.component';
+import { VerkaufComponent } from './verkauf/verkaufsmanagement/verkauf.component';
 import { EinkaufCardComponent } from './Einkauf/einkauf-card/einkauf-card.component';
 import { BuchhaltungCardComponent } from './buchhaltung/buchhaltung-card/buchhaltung-card.component';
 import { BuchhaltungComponent } from './buchhaltung/buchhaltungsmanagement/buchhaltung.component';

@@ -32,4 +32,22 @@ save(Cars: Cars): Observable<Cars> {
 
   return this.http.post<Cars>(url, Cars, { headers });
   }
+
+update(Einkaufspreis: Cars): Observable<Cars> {
+  const url = 'http://localhost:3000/cars_einkauf'
+
+  const headers = new HttpHeaders()
+    .set('Accept', 'application/json');
+
+  const params = new HttpParams()
+    .set ('Einkaufspreis', Einkaufspreis)
+  
+    return this.http.update<Cars[]>(url, { headers, params });
+
+
 }
+}
+
+// find liest, save erstellt ich brauch delete=delete und update=put
+// einkauf.service.ts + einkauf.component.ts + einkauf.component.html
+// update = ändert Preis
