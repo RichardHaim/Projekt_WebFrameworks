@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Cars } from 'src/app/entities/Cars_Einkauf';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { EinkaufService } from './Einkauf.service';
+import { EinkaufService } from '../Einkauf.service';
 
 
 @Component({
