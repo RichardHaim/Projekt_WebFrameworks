@@ -73,7 +73,10 @@ export class EinkaufComponent implements OnInit {
           this.message = 'Preisupdate fehlgeschlagen';
           console.error(this.message, errResponse);
       }
-      })
+     })
+
   }
+
+
 }
 
