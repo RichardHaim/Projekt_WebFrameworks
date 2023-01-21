@@ -1,3 +1,29 @@
+# Projet Overview - Fahrzeugbazar
+Gruppenarbeit zur LV Web Frameworks, WS 2022, Studiengang Business Data Science<br>
+**Gruppe D**: Haim, Kakici, Roßmann
+
+## Aufteilung
+* Haim: Buchhaltung, Navigationsmenü, Routing, Einrichtung JSON-Datenbank
+* Kakici: Verkauf
+* Roßmann: Einkauf
+
+## Funktion
+Die Anwendung besteht aus den oben genannten Anwendungen Buchhaltung, Verkauf und Einkauf. Der Einkauf managed die Einkaufsdaten, der Verkauf managed die Verkaufsdaten, die Buchhaltung speichert die Anzahl der Einkäufe, der Verkäufe, und die Bilanz in EUR. Die Daten sind in einem JSON-File im Ordner `src/app/db` gespeichert.
+
+## Setup Anwendung
+* Download der Files
+* Installation via `npm install`
+* Start via `npm start`
+
+## Setup JSON-Server
+* Installation via `npm install -g json-server`
+* JSON-server start via `json-server --watch src/db/datenbank.json` (gem. Anleitung auf [github](https://github.com/typicode/json-server))
+
+## zusätzliche Informationen Buchhaltung
+CRUD-Funktionalitäten sind gegeben, nur konnte ich es nicht schaffen, dass neue Einträge `newEntry` vom `buchhaltung.component.html` richtig in die Datenbank übertragen werden (`http.post` via Funktion `post_bilanz` in `buchhaltung.service.ts`)
+
+
+
 # Starter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
