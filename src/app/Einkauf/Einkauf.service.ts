@@ -48,11 +48,8 @@ update(Einkaufspreis: any): Observable<Cars> {
 
   const headers = new HttpHeaders()
     .set('Accept', 'application/json');
-
-  const params = new HttpParams()
-    .set ('Einkaufspreis', Einkaufspreis.Einkaufspreis)
   
-    return this.http.put<Cars>(url+"/"+Einkaufspreis.id, { headers, params });
+    return this.http.put<Cars>(url+"/"+Einkaufspreis.id, Einkaufspreis,{ headers });
 
 
 }
@@ -61,3 +58,9 @@ update(Einkaufspreis: any): Observable<Cars> {
 // find liest, save erstellt ich brauch delete=delete und update=put
 // einkauf.service.ts + einkauf.component.ts + einkauf.component.html
 // update = ändert Preis
+
+//change(selection: any): Observable<BuchhaltungCardComponent> {
+ // const headers = new HttpHeaders()
+  //.set("Accept", "application/json");
+//return this.http.put<BuchhaltungCardComponent>(this.url+"/"+selection.id, selection, {headers});
+//}
