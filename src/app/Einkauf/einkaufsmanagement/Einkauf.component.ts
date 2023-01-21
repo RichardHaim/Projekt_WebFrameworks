@@ -57,11 +57,23 @@ export class EinkaufComponent implements OnInit {
                 this.message = 'Error on updating the Car';
                 console.error(this.message, errResponse);
             }
+          
+  });
+  }
 
-            
-            
-    });
-
-  
-}}
+    update(value: any): void {
+    
+        this.EinkaufService 
+        .update(value)
+        .subscribe({
+          next: (selectedCars) => {
+          this.message = 'Neuer Preis';
+        },
+          error: (errResponse) => {
+          this.message = 'Preisupdate fehlgeschlagen';
+          console.error(this.message, errResponse);
+      }
+      })
+  }
+}
 

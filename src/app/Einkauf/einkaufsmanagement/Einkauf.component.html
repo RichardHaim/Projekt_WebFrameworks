@@ -104,16 +104,36 @@
     </div>
   </div>
 
-<div class="row">
-    <div
-      *ngFor="let Cars of Cars"
-      class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <app-einkauf-card [item]="Cars" [(selected)]="basket[Cars.id]"></app-einkauf-card>
-    </div>
-  </div>
-
   <div class="card">
     <div class="card-body">
       <pre>{{ basket | json }}</pre>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="selectedCars">
+    <div class="card-header">
+      <h2 class="card-title">Preis Update</h2>
+    </div>
+    <div class="card-body">
+  
+      <div>
+          {{ message }}
+      </div>
+  
+      <form>
+          <div class="form-group">
+              <label>Preis</label>
+              <input [(ngModel)]="selectedCars!.Einkaufspreis" name="Preis" class="form-control">
+          </div>
+  
+          <!-- Add the other input fields for the Flight accordingly -->
+  
+
+  
+          <div class="form-group">
+            <button (click)="update(selectedCars)" class="btn btn-default">Update</button>
+          </div>
+      </form>
+  
     </div>
   </div>
