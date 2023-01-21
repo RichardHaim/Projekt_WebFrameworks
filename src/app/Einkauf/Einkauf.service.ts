@@ -43,16 +43,16 @@ save(Cars: Cars): Observable<Cars> {
   return this.http.post<Cars>(url, Cars, { headers });
   }
 
-update(Einkaufspreis: any): Observable<Cars[]> {
+update(Einkaufspreis: any): Observable<Cars> {
   const url = 'http://localhost:3000/cars_einkauf'
 
   const headers = new HttpHeaders()
     .set('Accept', 'application/json');
 
   const params = new HttpParams()
-    .set ('Einkaufspreis', Einkaufspreis)
+    .set ('Einkaufspreis', Einkaufspreis.Einkaufspreis)
   
-    return this.http.put<Cars[]>(url, { headers, params });
+    return this.http.put<Cars>(url+"/"+Einkaufspreis.id, { headers, params });
 
 
 }

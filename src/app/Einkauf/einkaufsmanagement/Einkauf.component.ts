@@ -67,7 +67,7 @@ export class EinkaufComponent implements OnInit {
         .update(value)
         .subscribe({
           next: (selectedCars) => {
-          this.message = 'Neuer Preis';
+          this.message = 'Neuer Preis gespeichert';
         },
           error: (errResponse) => {
           this.message = 'Preisupdate fehlgeschlagen';
