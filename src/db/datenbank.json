@@ -192,29 +192,29 @@
     {
       "id": 1,
       "date": "01.01.2022",
-      "numberCarsSold": 13,
-      "numberCarsBought": 17,
-      "EURin": 3000,
-      "EURout": 1500.9,
-      "Bilanz": 1499.1
+      "numberCarsSold": "3",
+      "numberCarsBought": "23",
+      "EURin": "33423",
+      "EURout": "3334",
+      "Bilanz": 30089
     },
     {
       "id": 2,
       "date": "01.01.2022",
-      "numberCarsSold": 13,
-      "numberCarsBought": 17,
-      "EURin": 3000,
-      "EURout": 1500.9,
-      "Bilanz": 1499.1
+      "numberCarsSold": "43",
+      "numberCarsBought": "3",
+      "EURin": "33423",
+      "EURout": "456",
+      "Bilanz": 32967
     },
     {
       "id": 3,
       "date": "01.01.2022",
       "numberCarsSold": 13,
       "numberCarsBought": 17,
-      "EURin": 3000,
+      "EURin": 4000,
       "EURout": 1500.9,
-      "Bilanz": 1499.1
+      "Bilanz": 2499.1
     },
     {
       "id": 4,
@@ -239,9 +239,27 @@
       "date": "01.01.2022",
       "numberCarsSold": 13,
       "numberCarsBought": 17,
-      "EURin": 3000,
+      "EURin": "2234",
       "EURout": 1500.9,
-      "Bilanz": 1499.1
+      "Bilanz": 20843.1
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
     }
   ],
   "cars_verkauf": [

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Buchhaltung } from 'src/app/entities/Buchhaltung';
 import { BuchhaltungService } from '../buchhaltung.service';
+import { BuchhaltungComponent } from '../buchhaltungsmanagement/buchhaltung.component';
 
 
 @Component({
@@ -10,12 +11,14 @@ import { BuchhaltungService } from '../buchhaltung.service';
 })
 export class BuchhaltungCardComponent implements OnInit {
 
-  constructor(private buchhaltung_eintrag: BuchhaltungService) { }
+  constructor(private buchhaltung_eintrag: BuchhaltungService,
+    private buchhaltung_component: BuchhaltungComponent) { }
 
   @Input() item: Buchhaltung | undefined;
   @Input() selected: boolean = false;
   @Output() selectedChange = new EventEmitter<boolean>();
   message = "";
+  
 
   ngOnInit(): void {
   }
@@ -25,6 +28,11 @@ export class BuchhaltungCardComponent implements OnInit {
       .remove(this.item)
       .subscribe()
     this.message = "Eintrag gelöscht"
+  }
+
+  selectMe(selected_case: any):void{
+    this.buchhaltung_component.toggleDisplay_selection()
+    this.buchhaltung_component.selectedEntry = selected_case
   }
 
 /*

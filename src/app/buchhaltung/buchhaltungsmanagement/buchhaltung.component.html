@@ -1,38 +1,24 @@
-<!--
-    Layout:
-    Button für neue Bilanzberechnung
-        Ergebnis: Anzeige der Informationen in div-cards (wie beim Flugservice am Anfang)
-        mit Button zur Möglichkeit der Änderung
-        mit Button zur Möglichkeit der Löschung
-    Button für das Auslesen der vorhandenen Bilanzdaten
-        Ergebnis: cards mit allen Informationen + Berechnung der Bilanz
-        mit Button zur Möglichkeit der Änderung
-        mit Button zur Möglichkeit der Löschung
-    -->
-
 <div class="card">
     <div class="card-header">
         <h2 class="card-title">Buchhaltung</h2>
     </div>
 </div>
 
+
+
 <div class="card">
     <div class="card-body">
-        <div>
-            <button class="btn btn-info col-3 mx-auto" (click)="toggleDisplay()">
-            Eintrag aktueller Bilanzdaten
-            </button>
-        </div>
-        <div>
-            <button class="btn btn-info col-3 mx-auto" (click)="search()">
-                Anzeige aller gespeicherten Bilanzdaten
-            </button>
-        </div>
+        <div><button class="btn btn-info col-3 mx-auto" (click)="toggleDisplay_entry()">
+                Neuen Bilanzeintrag erstellen
+            </button></div>
+        <div><button class="btn btn-info col-3 mx-auto" (click)="search()">
+                Gespeicherte Bilanzdaten anzeigen
+            </button></div>
     </div>
 </div>
 
-<!-- TODO: diesen part in Cards für die Erstellung neuer Einträge verschieben -->
-<!--<div class="card" *ngIf="Buchhaltung_add.length">-->
+
+
 <div class="card" *ngIf="toDisplay">
     <div class="card-body"><h3>Bilanzeingabe</h3></div>
     <table class="table table-condensed">
@@ -45,74 +31,84 @@
                 <th>Einnahmen (EUR)</th>
                 <th>Ausgaben (EUR)</th>
                 <th>Bilanz (EUR)</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
-
-        <tr>
-            <td>
-                <div class="form-group">
-                    {{generateID()}}
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    {{date | date: "dd.MM.yyyy"}}
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    <input [(ngModel)]="numbersCarsSold" name="numbersCarsSold" class="form-control">
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    <input [(ngModel)]="numberCarsBought" name="numberCarsBought" class="form-control">
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    <input [(ngModel)]="EURin" name="EURin" class="form-control" id="EURinput" [formControl]="EURinInput">
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                    <input [(ngModel)]="EURout" name="EURout" class="form-control" id="EURoutput" [formControl]="EURoutInput">
-                </div>
-            </td>
-            <td>
-                <div class="form-group">
-                <div>{{bilanz(EURinInput.value, EURoutInput.value) | number }}</div>
-                </div>
-            </td>
-            <td><button class="btn btn-success">Save</button></td>
-        </tr>
-
-    
-    
-    </tbody>
+            <tr><td><input [(ngModel)]="newEntry!.id" name="ID_new" value=0></td>
+                <td><input [(ngModel)]="newEntry!.date" name="date" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.numberCarsSold" value=0 name="numbersCarsSold_new" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.numberCarsBought" value=0 ame="numberCarsBought_new" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.EURin" value=0 name="EURin_new" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.EURout" value=0 name="EURout_new" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Bilanz" name="Bilanz_new" value=0 class="form-control"></td>
+                    <!--{{bilanz_newentry("EURin_new", "Eurout_new") | number }}</td>-->
+                <td><button class="btn btn-success" (click)="create(newEntry)">Save</button></td>
+            </tr>
+        </tbody>
     </table>
 </div>
+
+
+
+
+<div class="card" *ngIf="toDisplay_selection">
+    <div class="card-header">
+      <h2 class="card-title">Änderung des selektierten Eintrages</h2>
+    </div>
+    <div class="card-body">
+  
+      <div>
+          {{ message }}
+      </div>
+
+      <table class ="table table-condensed">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Datum</th>
+                <th>Autos verkauft</th>
+                <th>Autos gekauft</th>
+                <th>Einnahmen (EUR)</th>
+                <th>Ausgaben (EUR)</th>
+                <th>Bilanz (EUR)</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td name="id">{{selectedEntry!.id}}</td>
+                <td name="date">{{selectedEntry!.date}}</td>
+                <td><input [(ngModel)]="selectedEntry!.numberCarsSold" name="numberCarsSold" class="form-control"></td>
+                <td><input [(ngModel)]="selectedEntry!.numberCarsBought" name="numberCarsBought" class="form-control"></td>
+                <td><input [(ngModel)]="selectedEntry!.EURin" name="EURin" class="form-control"></td>
+                <td><input [(ngModel)]="selectedEntry!.EURout" name="EURout" class="form-control"></td>
+                <td [(ngModel)]="selectedEntry!.Bilanz" name="Bilanz_change"><div>
+                    {{bilanz(selectedEntry?.EURin, selectedEntry?.EURout) | number}}
+                </div></td>
+                <td><button class="btn btn-success" (click)="update(selectedEntry)">Save</button></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+
+
+
 
 <div class="card" *ngIf="Buchhaltung_Suche.length">
     <div class="card-header">
         <h3 class="card-title">Gespeicherte Bilanzeinträge</h3>
+        <div class="row">
+            <div
+              *ngFor="let b of Buchhaltung_Suche"
+              class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <app-buchhaltung-card [item]="b"></app-buchhaltung-card>
+            </div>
+          </div>
+        
     </div>
 </div>
 
 
-<div class="row">
-    <div
-      *ngFor="let b of Buchhaltung_Suche"
-      class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-      <app-buchhaltung-card [item]="b"></app-buchhaltung-card>
-    </div>
-  </div>
-
-  <!--
-  <div class="card">
-    <div class="card-body">
-      <pre>{{ basket | json }}</pre>
-    </div>
-  </div>
-  -->

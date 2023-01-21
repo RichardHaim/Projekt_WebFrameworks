@@ -203,18 +203,18 @@
         "date": "01.01.2022",
         "numberCarsSold": 13,
         "numberCarsBought": 17,
-        "EURin": 3000,
+        "EURin": 2000,
         "EURout": 1500.9,
-        "Bilanz": 1499.1
+        "Bilanz": 499.1
       },
       {
         "id": 3,
         "date": "01.01.2022",
         "numberCarsSold": 13,
         "numberCarsBought": 17,
-        "EURin": 3000,
+        "EURin": 4000,
         "EURout": 1500.9,
-        "Bilanz": 1499.1
+        "Bilanz": 2499.1
       },
       {
         "id": 4,

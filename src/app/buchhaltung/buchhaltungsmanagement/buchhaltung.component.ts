@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Buchhaltung } from 'src/app/entities/Buchhaltung';
 import { BuchhaltungService } from '../buchhaltung.service';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -12,38 +12,50 @@ import { FormControl } from '@angular/forms';
 export class BuchhaltungComponent implements OnInit {
 
     Buchhaltung_Suche: Array<Buchhaltung> = [];
-    Buchhaltung_add: Array<Buchhaltung> = [];
+    //Buchhaltung_add: Array<Buchhaltung> = [];
     selectedEntry: Buchhaltung | undefined ;
-    basket: Record<number, boolean> = {};
-    date: Date = new Date(Date.now());
-    numbersCarsSold: number = 0;
-    numberCarsBought: number = 0;
-    EURin: number = 0;
-    EURout: number = 0;
+    newEntry: Buchhaltung | undefined;
+    /*
+    newEntryGroup = new FormGroup({
+      newEntry_EURin : new FormControl(""),
+      newEntry_EURout : new FormControl("")
+    });
+    newUpdateGroup = new FormGroup({
+      updateEURin : new FormGroup(""),
+      updateEURout : new FormGroup("")
+    });
+    */
     toDisplay = false;
-    EURinInput = new FormControl("");
-    EURoutInput = new FormControl("");
-    Bilanz: number = 0;
+    toDisplay_selection = false;
+    Bilanz: number = 9999;
     maxID: number = 0;
+    message: string = "";
 
 
     constructor(private BuchhaltungService: BuchhaltungService) { }
 
-    ngOnInit(): void { }
+    ngOnInit(): void {
 
-    toggleDisplay() {
+    }
+
+    toggleDisplay_entry() {
       this.toDisplay = true;
     }
 
-    generateID(): number {
-      return this.maxID;
+    toggleDisplay_selection(){
+      this.toDisplay_selection = true;
     }
 
     bilanz(EURin: any, EURout: any) {
       const bilanzwert = EURin - EURout;
       return bilanzwert;
     }
-
+/*
+    bilanz_newentry(EURin: any, EURout: any) {
+      const bilanzwert = EURin - EURout;
+      return bilanzwert;
+    }
+*/
     search(): void {
       this.BuchhaltungService
       .find()
@@ -57,11 +69,18 @@ export class BuchhaltungComponent implements OnInit {
       })
     }
 
+    update(selection: any):void{
+      this.BuchhaltungService
+      .change(selection)
+      .subscribe()
+    }
 
-    create(): void {
+    create(selection: any): void {
       // holt sich via get_einkaufsdaten() die Summe der Einkaufspreise & Anzahl der Einträge
       // holt sich via get_verkaufsdaten() die Summe der Verkaufspreise & Anzahl der Einträge
-      this.Buchhaltung_add
+      this.BuchhaltungService
+        .post_bilanz(selection)
+        .subscribe()
 
       // Greift auf Service-Funktion post_Bilanz zu
       // Soll die Daten in den array "Buchhaltung_add" speichern, welcher dann für 
