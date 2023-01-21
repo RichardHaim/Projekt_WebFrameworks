@@ -17,7 +17,7 @@ Die Anwendung besteht aus den oben genannten Anwendungen Buchhaltung, Verkauf un
 
 ## Setup JSON-Server
 * Installation via `npm install -g json-server`
-* JSON-server start via `json-server --watch src/db/datenbank.json` (gem. Anleitung auf [github](https://github.com/typicode/json-server)
+* JSON-server start via `json-server --watch src/db/datenbank.json` (gem. Anleitung auf [github](https://github.com/typicode/json-server))
 
 ## zusätzliche Informationen Buchhaltung
 CRUD-Funktionalitäten sind gegeben, nur konnte ich es nicht schaffen, dass neue Einträge `newEntry` vom `buchhaltung.component.html` richtig in die Datenbank übertragen werden (`http.post` via Funktion `post_bilanz` in `buchhaltung.service.ts`)
