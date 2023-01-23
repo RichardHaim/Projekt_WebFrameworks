@@ -24,6 +24,7 @@ export class EinkaufComponent implements OnInit {
 
     Cars: Array<Cars> = [];
     selectedCars: Cars | undefined;
+    newEntry: EinkaufComponent | undefined ;
 
     basket: Record<number, boolean> = {
     };
@@ -32,7 +33,7 @@ export class EinkaufComponent implements OnInit {
     Buchhaltung_Suche: Array<EinkaufComponent> = [];
     
     selectedEntry: EinkaufComponent | undefined ;
-    newEntry: EinkaufComponent | undefined;
+    //newEntry: EinkaufComponent | undefined;
 
     constructor(private EinkaufService: EinkaufService) { }
   

@@ -72,6 +72,6 @@ post_new_Eintrag(value:any): Observable<Cars>{
   const headers = new HttpHeaders()
       .set("Accept", "application/json");
   const params = new HttpParams()
-  return this.http.post<Cars>(url+"/"+value.id, { headers } );
+  return this.http.post<Cars>(url, value, { headers } );
 }
 }
