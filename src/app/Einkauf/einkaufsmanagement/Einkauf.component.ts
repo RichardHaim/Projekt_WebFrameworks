@@ -14,11 +14,25 @@ export class EinkaufComponent implements OnInit {
 
     Marke = '';
     Modell= '';
+    PS='';
+    Hubraum='';
+    Beschleunigung='';
+    Gewicht='';
+    Baujahr='';
+    Einkaufspreis='';
+    id=''
+
     Cars: Array<Cars> = [];
     selectedCars: Cars | undefined;
 
     basket: Record<number, boolean> = {
     };
+
+     // Übernommen von Richard - gleiches Prinzip
+    Buchhaltung_Suche: Array<EinkaufComponent> = [];
+    
+    selectedEntry: EinkaufComponent | undefined ;
+    newEntry: EinkaufComponent | undefined;
 
     constructor(private EinkaufService: EinkaufService) { }
   
@@ -73,10 +87,34 @@ export class EinkaufComponent implements OnInit {
           this.message = 'Preisupdate fehlgeschlagen';
           console.error(this.message, errResponse);
       }
-     })
-
-  }
-
-
-}
-
+     })}
+    
+    remove(value: any): void {
+      
+        this.EinkaufService
+        .remove(value)
+        .subscribe({
+          next: (selectedCars) =>{
+          this.message = 'Eintrag gelöscht';
+        },
+        error: (errResponse) => {
+        this.message = 'Preisupdate fehlgeschlagen';
+        console.error(this.message, errResponse)
+      }
+      })}
+      create(selection: any): void {
+        this.EinkaufService
+          .post_new_Eintrag(selection)
+          .subscribe({
+            next: (selectedCars) =>{
+            this.message = 'Eintrag gelöscht';
+          },
+          error: (errResponse) => {
+          this.message = 'Eintrag fehlgeschlagen';
+          console.error(this.message, errResponse)
+        }
+        })
+          
+    
+    
+    }}

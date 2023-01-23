@@ -64,7 +64,7 @@
       "Beschleunigung": 3.6,
       "Gewicht": 2075,
       "Baujahr": 2019,
-      "Einkaufspreis": "340"
+      "Einkaufspreis": 4372943
     },
     {
       "id": 7,
@@ -152,7 +152,7 @@
       "Beschleunigung": 9.9,
       "Gewicht": 1055,
       "Baujahr": 2020,
-      "Einkaufspreis": "130"
+      "Einkaufspreis": 28394.9
     },
     {
       "id": "15",
@@ -289,6 +289,17 @@
       "Verkaufspreis": 128384.93,
       "KundeVorname": "Peter",
       "KundeNachname": "Kleber"
+    },
+    {
+      "id": 6,
+      "Marke": "Audi",
+      "Modell": "RS6 C8",
+      "PS": 600,
+      "Hubraum": 3996,
+      "Beschleunigung": 3.6,
+      "Gewicht": 2075,
+      "Baujahr": 2019,
+      "Einkaufspreis": 4372943
     }
   ]
 }

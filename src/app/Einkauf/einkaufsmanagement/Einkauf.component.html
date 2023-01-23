@@ -92,23 +92,20 @@
               <input [(ngModel)]="selectedCars!.Marke" name="Marke" class="form-control">
           </div>
   
-          <!-- Add the other input fields for the Flight accordingly -->
   
 
   
           <div class="form-group">
             <button (click)="save()" class="btn btn-info col-3 mx-auto">Save</button>
           </div>
+          <div class="form-group">
+            <button (click)="remove(selectedCars)" class="btn btn-info col-3 mx-auto">Delete</button>
+          </div>
       </form>
   
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-body">
-      <pre>{{ basket | json }}</pre>
-    </div>
-  </div>
 
   <div class="card" *ngIf="selectedCars">
     <div class="card-header">
@@ -128,10 +125,6 @@
               <input [(ngModel)]="selectedCars!.Einkaufspreis" name="Preis" class="form-control">
           </div>
   
-          <!-- Add the other input fields for the Flight accordingly -->
-  
-
-  
           <div class="form-group">
             <button (click)="update(selectedCars)" class="btn btn-default">Update</button>
           </div>
@@ -139,3 +132,36 @@
   
     </div>
   </div>
+
+  <div class="card">
+    <div class="card-body"><h3>Neuer Eintrag</h3></div>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Marke</th>
+                <th>Modell</th>
+                <th>PS</th>
+                <th>Hubraum</th>
+                <th>Beschleunigung</th>
+                <th>Gewicht</th>
+                <th>Baujahr</th>
+                <th>Einkaufspreis</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td><input [(ngModel)]="newEntry!.id" name="ID_new" value=0 class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Marke" name="marke" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Modell" value=0 name="Modell" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.PS" value=0 ame="PS" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Hubraum" value=0 name="Hubraum" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Beschleunigung" value=0 name="Beschleunigung" class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Gewicht" name="Gewicht" value=0 class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Baujahr" name="Baujahr" value=0 class="form-control"></td>
+                <td><input [(ngModel)]="newEntry!.Einkaufspreis" name="Einkaufspreis" value=0 class="form-control"></td>
+                <td><button class="btn btn-success" (click)="create(newEntry)">Save</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

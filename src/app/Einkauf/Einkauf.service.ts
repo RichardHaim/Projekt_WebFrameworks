@@ -53,14 +53,25 @@ update(Einkaufspreis: any): Observable<Cars> {
 
 
 }
+
+remove(value: any): Observable<Cars> {
+  const url = 'http://localhost:3000/cars_einkauf'
+  
+  const headers = new HttpHeaders()
+      .set("Accept", "application/json");
+  return this.http.delete<Cars>(url+"/"+value.id, { headers });
 }
 
 // find liest, save erstellt ich brauch delete=delete und update=put
 // einkauf.service.ts + einkauf.component.ts + einkauf.component.html
 // update = ändert Preis
 
-//change(selection: any): Observable<BuchhaltungCardComponent> {
- // const headers = new HttpHeaders()
-  //.set("Accept", "application/json");
-//return this.http.put<BuchhaltungCardComponent>(this.url+"/"+selection.id, selection, {headers});
-//}
+post_new_Eintrag(value:any): Observable<Cars>{
+  const url= 'http://localhost:3000/cars_einkauf'
+  
+  const headers = new HttpHeaders()
+      .set("Accept", "application/json");
+  const params = new HttpParams()
+  return this.http.post<Cars>(url+"/"+value.id, { headers } );
+}
+}
