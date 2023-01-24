@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
-import { VerkaufComponent } from 'c:/Users/kakic/Documents/WebFrameworksProjekt/Projekt_WebFrameworks/src/app/Verkauf/verkaufsmanagement/verkauf.component';
-import { verkaufCardComponent } from 'c:/Users/kakic/Documents/WebFrameworksProjekt/Projekt_WebFrameworks/src/app/Verkauf/verkauf-card/verkauf-card.component';
-import { VERKAUF_ROUTES } from 'c:/Users/kakic/Documents/WebFrameworksProjekt/Projekt_WebFrameworks/src/app/Verkauf/verkauf.routes';
+import { VerkaufComponent } from './verkaufsmanagement/verkauf.component';
+import { VERKAUF_ROUTES } from './verkauf.routes';
+import { verkaufCardComponent } from './verkauf-card/verkauf-card.component';
 
 @NgModule({
     imports:[

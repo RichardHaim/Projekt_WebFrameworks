@@ -17,7 +17,7 @@ export class VerkaufComponent implements OnInit {
     Modell= '';
     Cars: Array<Cars_Verkauf> = [];
     selectedCars: Cars_Verkauf | undefined;
-
+    newEntry: Cars_Verkauf | undefined;
     basket: Record<number, boolean> = {
     };
 
