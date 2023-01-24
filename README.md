@@ -5,11 +5,11 @@ Gruppenarbeit zur LV Web Frameworks, WS 2022, Studiengang Business Data Science<
 ## Aufteilung
 * Haim: Buchhaltung, Navigationsmenü, Routing, Einrichtung JSON-Datenbank
 * Kakici: Verkauf
-* Roßmann: Einkauf, Homepageverschönerung 
+* Roßmann: Einkauf, Homepage Design 
 
 ## Informationen zum Projekt
-__Roßmann__: CRUD: Speichern neuer Daten funktioniert nicht. Wurde im HTML der Component ausgeblendet, damit die Funktionalität der restlichen App gegeben ist (bei Aktivierung funktioniert die Suche nicht mehr)
-__Kakici__: CRUD: Speichern neuer Daten funktioniert nicht. Wurde im HTML der Component ausgeblendet, damit die Funktionalität der restlichen App gegeben ist (bei Aktivierung funktioniert die Suche nicht mehr)
+__Roßmann__: CRUD: Speichern neuer Daten funktioniert nicht. Wurde im HTML der Component ausgeblendet, damit die Funktionalität der restlichen App gegeben ist (bei Aktivierung funktioniert die Suche nicht mehr)<br>
+__Kakici__: CRUD: Speichern neuer Daten funktioniert nicht. Wurde im HTML der Component ausgeblendet, damit die Funktionalität der restlichen App gegeben ist (bei Aktivierung funktioniert die Suche nicht mehr)<br>
 __Haim__: CRUD-Funktionalitäten sind gegeben, nur konnte ich es nicht schaffen, dass neue Einträge `newEntry` vom `buchhaltung.component.html` richtig in die Datenbank übertragen werden (`http.post` via Funktion `post_bilanz` in `buchhaltung.service.ts`). Es wird leider nur die "id" übertragen, nicht jedoch der gesamte array.
 
 
