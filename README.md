@@ -7,6 +7,11 @@ Gruppenarbeit zur LV Web Frameworks, WS 2022, Studiengang Business Data Science<
 * Kakici: Verkauf
 * Roßmann: Einkauf
 
+## Informationen zum Projekt
+__Roßmann__: Bzgl CRUD: Update funktioniert nicht, ist auskommentiert im html. Mussten wir machen, da der Rest sonst nicht funktioniert hat.
+__Kakici__:
+
+
 ## Funktion
 Die Anwendung besteht aus den oben genannten Anwendungen Buchhaltung, Verkauf und Einkauf. Der Einkauf managed die Einkaufsdaten, der Verkauf managed die Verkaufsdaten, die Buchhaltung speichert die Anzahl der Einkäufe, der Verkäufe, und die Bilanz in EUR. Die Daten sind in einem JSON-File im Ordner `src/app/db` gespeichert.
 
