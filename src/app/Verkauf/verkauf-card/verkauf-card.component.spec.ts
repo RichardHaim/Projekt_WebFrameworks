@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerkaufCardComponent } from './verkauf-card.component';
+import { verkaufCardComponent } from 'c:/Users/kakic/Documents/WebFrameworksProjekt/Projekt_WebFrameworks/src/app/Verkauf/verkauf-card/verkauf-card.component';
 
 describe('VerkaufCardComponent', () => {
-  let component: VerkaufCardComponent;
-  let fixture: ComponentFixture<VerkaufCardComponent>;
+  let component: verkaufCardComponent;
+  let fixture: ComponentFixture<verkaufCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VerkaufCardComponent ]
+      declarations: [ verkaufCardComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VerkaufCardComponent);
+    fixture = TestBed.createComponent(verkaufCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

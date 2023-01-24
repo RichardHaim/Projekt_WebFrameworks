@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { VerkaufsmanagementComponent } from './verkauf.component';
+import { VerkaufComponent } from 'c:/Users/kakic/Documents/WebFrameworksProjekt/Projekt_WebFrameworks/src/app/Verkauf/verkaufsmanagement/verkauf.component';
 
 describe('VerkaufsmanagementComponent', () => {
-  let component: VerkaufsmanagementComponent;
-  let fixture: ComponentFixture<VerkaufsmanagementComponent>;
+  let component: VerkaufComponent;
+  let fixture: ComponentFixture<VerkaufComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VerkaufsmanagementComponent ]
+      declarations: [ VerkaufComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VerkaufsmanagementComponent);
+    fixture = TestBed.createComponent(VerkaufComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
