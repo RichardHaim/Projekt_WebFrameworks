@@ -1,4 +1,4 @@
-# Projet Overview - Fahrzeugbazar
+# Project Overview - Fahrzeugbazar
 Gruppenarbeit zur LV Web Frameworks, WS 2022, Studiengang Business Data Science<br>
 **Gruppe D**: Haim, Kakici, Roßmann
 
