@@ -5,7 +5,7 @@ Gruppenarbeit zur LV Web Frameworks, WS 2022, Studiengang Business Data Science<
 ## Aufteilung
 * Haim: Buchhaltung, Navigationsmenü, Routing, Einrichtung JSON-Datenbank
 * Kakici: Verkauf
-* Roßmann: Einkauf
+* Roßmann: Einkauf, Homepageverschönerung 
 
 ## Informationen zum Projekt
 __Roßmann__: Bzgl CRUD: Update funktioniert nicht, ist auskommentiert im html. Mussten wir machen, da der Rest sonst nicht funktioniert hat.
